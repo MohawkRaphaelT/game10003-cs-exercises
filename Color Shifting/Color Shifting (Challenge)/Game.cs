@@ -1,4 +1,4 @@
-﻿// CHALENGE: have the background color change over time
+﻿// CHALLENGE: have the background color change over time
 // Hint: how can you make the program remember the last color?
 
 using System;
