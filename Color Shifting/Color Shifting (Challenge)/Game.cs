@@ -8,9 +8,6 @@ namespace Game10003;
 
 public class Game
 {
-    // Keep track of color variables
-    Color color = new Color();
-
     public void Setup()
     {
         Window.SetTitle("Color Shifting");
@@ -21,22 +18,13 @@ public class Game
 
     public void Update()
     {
-        // Update the color every frame
-        color.R = (color.R + 1) % 256;
-        color.G = (color.G + 2) % 256;
-        color.B = (color.B + 3) % 256;
+        // Create a color
+        int r = 0;
+        int g = 0;
+        int b = 0;
+        Color color = new Color(r, g, b);
 
         // Set the background color every frame
         Window.ClearBackground(color);
-
-        // Show the color value on screen
-        string text = $"Color({color.R:000}, {color.G:000}, {color.B:000})";
-        Text.Color = Color.White;
-        Text.Draw(text, 10, 10);
-        Text.Draw(text, 10, 12);
-        Text.Draw(text, 12, 10);
-        Text.Draw(text, 12, 12);
-        Text.Color = Color.Black;
-        Text.Draw(text, 11, 11);
     }
 }
