@@ -12,6 +12,7 @@ public class Game
     {
         Window.SetTitle("Color Shifting");
         Window.SetSize(400, 400);
+        // Run this one slow so the colors don't change too fast
         Window.TargetFPS = 10;
     }
 
