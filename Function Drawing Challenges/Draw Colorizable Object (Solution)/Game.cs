@@ -58,9 +58,9 @@ namespace Game10003
 
             // Ghost body
             Draw.FillColor = ghostColor;
-            Draw.Rectangle(x + p * 5, y + p * 0, p * 4, p); // row 0
-            Draw.Rectangle(x + p * 3, y + p * 1, p * 8, p); // row 1
-            Draw.Rectangle(x + p * 2, y + p * 2, p * 10, p); // row 2
+            Draw.Rectangle(x + p * 5, y + p * 0, p * 4, p);      // row 0
+            Draw.Rectangle(x + p * 3, y + p * 1, p * 8, p);      // row 1
+            Draw.Rectangle(x + p * 2, y + p * 2, p * 10, p);     // row 2
             Draw.Rectangle(x + p * 1, y + p * 3, p * 12, p * 3); // row 3
             Draw.Rectangle(x + p * 0, y + p * 6, p * 14, p * 6); // row 6
             // row 12
@@ -74,10 +74,10 @@ namespace Game10003
 
             // Eye whites
             Draw.FillColor = eyeWhite;
-            // left eyes
+            // Left eye
             Draw.Rectangle(x + p * 2, y + p * 3, p * 2, p * 5);
             Draw.Rectangle(x + p * 1, y + p * 4, p * 4, p * 3);
-            // right eye
+            // Right eye
             Draw.Rectangle(x + p * 8, y + p * 3, p * 2, p * 5);
             Draw.Rectangle(x + p * 7, y + p * 4, p * 4, p * 3);
 
