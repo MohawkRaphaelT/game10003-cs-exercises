@@ -1,7 +1,7 @@
 ﻿// CHALLENGE: create a function that draws something to the screen. Give the function a
 //            parameter for color, and use that color when drawing the object. Call that
 //            function multiple times using different colors to draw the same object but
-//            with different colors.
+//            with different colors to the screen..
 
 using System;
 using System.Numerics;
