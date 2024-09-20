@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draw Colorizable Object (Solution)", "Draw Colorizable Object (Solution).csproj", "{886C5D6F-5BCA-42F6-8E4E-2D1674BD4881}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{886C5D6F-5BCA-42F6-8E4E-2D1674BD4881}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{886C5D6F-5BCA-42F6-8E4E-2D1674BD4881}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{886C5D6F-5BCA-42F6-8E4E-2D1674BD4881}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{886C5D6F-5BCA-42F6-8E4E-2D1674BD4881}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6BBDD90-0168-4EBC-9717-B91B16287A0A}
+	EndGlobalSection
+EndGlobal
