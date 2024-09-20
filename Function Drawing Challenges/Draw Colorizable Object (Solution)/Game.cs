@@ -11,6 +11,8 @@ namespace Game10003
     public class Game
     {
         // Ghost colors
+        // Ref 1: https://www.schemecolor.com/pac-man-ghosts-color-palette.php
+        // Ref 2: https://www.schemecolor.com/pac-man-game-colors.php
         Color inkyRed = new Color(255, 0, 0);
         Color pinkyPink = new Color(255, 184, 255);
         Color blinkyCyan = new Color(0, 255, 255);
