@@ -41,7 +41,7 @@ namespace Game10003
                 Input.IsMouseButtonPressed(MouseInput.Left))
             {
                 Draw.FillColor = Random.Color();
-                radius = Random.Float(10, 100);
+                radius = Random.Float(10, 200);
                 x = Random.Float(radius, Window.Width - radius);
                 y = Random.Float(radius, Window.Height - radius);
             }
