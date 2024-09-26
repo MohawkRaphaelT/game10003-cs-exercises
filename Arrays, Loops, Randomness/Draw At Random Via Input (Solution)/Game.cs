@@ -20,7 +20,7 @@ namespace Game10003
         /// </summary>
         public void Setup()
         {
-            Window.SetTitle("Draw Selected From Array 1");
+            Window.SetTitle("Draw At Random Via Input");
             Window.SetSize(400, 400);
 
             // Compute screen center coordinate
