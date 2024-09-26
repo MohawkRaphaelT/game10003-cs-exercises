@@ -13,7 +13,6 @@ namespace Game10003
         // Place your variables here:
         Color bg = new Color(0, 161, 224);
         Color frogGreen = new Color(140, 240, 110);
-        Color frogBrown = new Color(150, 115, 75);
         Color frogPink = new Color(255, 170, 150);
 
         /// <summary>
@@ -39,6 +38,8 @@ namespace Game10003
             DrawFrog(90, 120);
             // Draw in upper-left corner
             DrawFrog(310, 380);
+            // Draw on opposite side of screen
+            DrawFrog(Window.Width - x, Window.Height - y);
             // Draw at mouse position
             DrawFrog(x, y);
             // Draw beside mouse position
@@ -54,7 +55,6 @@ namespace Game10003
             Draw.Circle(x + 25, y - 70, 23);
             Draw.Capsule(x - 50, y - 40, x + 50, y - 40, 25);
             // Feet
-            //Draw.FillColor = frogBrown;
             Draw.Square(x - 20, y - 15, 15); // L
             Draw.Square(x + 05, y - 15, 15); // L
             Draw.Rectangle(x - 40, y - 12, 32, 12); // L
@@ -63,8 +63,8 @@ namespace Game10003
             Draw.Circle(x + 39, y - 6, 6); // R
             // Cheeks
             Draw.FillColor = frogPink;
-            Draw.Circle(x - 50, y - 40, 22);
-            Draw.Circle(x + 50, y - 40, 22);
+            Draw.Circle(x - 50, y - 40, 20);
+            Draw.Circle(x + 50, y - 40, 20);
             // Eyes
             Draw.FillColor = Color.White;
             Draw.Circle(x - 25, y - 70, 18);
