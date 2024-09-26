@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Draw Gradient With Loop (Solution)", "Draw Gradient With Loop (Solution).csproj", "{3859449E-025E-4384-89C3-249439ED209D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3859449E-025E-4384-89C3-249439ED209D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3859449E-025E-4384-89C3-249439ED209D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3859449E-025E-4384-89C3-249439ED209D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3859449E-025E-4384-89C3-249439ED209D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CCAE7A7F-AA25-4CEA-A957-AD1CDD6DECE7}
+	EndGlobalSection
+EndGlobal
