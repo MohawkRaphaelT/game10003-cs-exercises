@@ -1,9 +1,9 @@
-﻿// Include code libraries you need below (use the namespace).
+﻿// Include the namespaces (code libraries) you need below.
 using System;
 using System.Numerics;
 
 // The namespace your code is in.
-namespace Game10003;
+namespace MohawkGame2D;
 
 /// <summary>
 ///     Your game code goes inside this class!
