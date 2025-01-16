@@ -1,10 +1,12 @@
 ﻿// CHALLENGE: Toggle the square's color between two colors (eg. red and green)
 //            when the player either hits spacebar or does a left mouse click.
 
+// Include the namespaces (code libraries) you need below.
 using System;
 using System.Numerics;
 
-namespace Game10003;
+// The namespace your code is in.
+namespace MohawkGame2D;
 
 public class Game
 {

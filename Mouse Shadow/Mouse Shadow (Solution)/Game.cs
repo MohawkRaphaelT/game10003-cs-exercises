@@ -3,10 +3,12 @@
 // Hint 1: Focus on one shadow. The logic can be applied to all afterwards.
 // Hint 2: Consider how you can make the program remember last frame's mouse position.
 
+// Include the namespaces (code libraries) you need below.
 using System;
 using System.Numerics;
 
-namespace Game10003;
+// The namespace your code is in.
+namespace MohawkGame2D;
 
 public class Game
 {

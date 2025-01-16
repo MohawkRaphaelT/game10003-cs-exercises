@@ -1,10 +1,12 @@
 ﻿// CHALLENGE: have the background color change over time
 // Hint: how can you make the program remember the last color?
 
+// Include the namespaces (code libraries) you need below.
 using System;
 using System.Numerics;
 
-namespace Game10003;
+// The namespace your code is in.
+namespace MohawkGame2D;
 
 public class Game
 {

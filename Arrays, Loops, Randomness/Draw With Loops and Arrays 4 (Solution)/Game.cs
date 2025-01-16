@@ -1,64 +1,63 @@
-﻿// Include code libraries you need below (use the namespace).
+﻿// Include the namespaces (code libraries) you need below.
 using System;
 using System.Numerics;
 
 // The namespace your code is in.
-namespace Game10003
+namespace MohawkGame2D;
+
+/// <summary>
+///     Your game code goes inside this class!
+/// </summary>
+public class Game
 {
+    // Place your variables here:
+    float[] xs = [];
+    float[] ys = [];
+    float[] radii = [];
+    Color[] colors = [];
+
     /// <summary>
-    ///     Your game code goes inside this class!
+    ///     Setup runs once before the game loop begins.
     /// </summary>
-    public class Game
+    public void Setup()
     {
-        // Place your variables here:
-        float[] xs = [];
-        float[] ys = [];
-        float[] radii = [];
-        Color[] colors = [];
+        Window.SetTitle("Draw With Loops and Arrays #4");
+        Window.SetSize(400, 400);
 
-        /// <summary>
-        ///     Setup runs once before the game loop begins.
-        /// </summary>
-        public void Setup()
+        // Prepare arrays
+        xs = new float[10];
+        ys = new float[10];
+        radii = new float[10];
+        colors = new Color[10];
+        // Loop over each item and assign a random value
+        for (int i = 0; i < colors.Length; i++)
         {
-            Window.SetTitle("Draw With Loops and Arrays #4");
-            Window.SetSize(400, 400);
+            xs[i] = Random.Float(0, 400);
+            ys[i] = Random.Float(0, 400);
+            radii[i] = Random.Float(10, 40);
+            colors[i] = Random.Color();
+        }
+    }
 
-            // Prepare arrays
-            xs = new float[10];
-            ys = new float[10];
-            radii = new float[10];
-            colors = new Color[10];
-            // Loop over each item and assign a random value
-            for (int i = 0; i < colors.Length; i++)
-            {
-                xs[i] = Random.Float(0, 400);
-                ys[i] = Random.Float(0, 400);
-                radii[i] = Random.Float(10, 40);
-                colors[i] = Random.Color();
-            }
+    /// <summary>
+    ///     Update runs every frame.
+    /// </summary>
+    public void Update()
+    {
+        Window.ClearBackground(Color.OffWhite);
+
+        // run loop 10 times
+        for (int i = 0; i < 10; i++)
+        {
+            // Get value
+            float x = xs[i]; // Get X from array
+            float y = ys[i]; // Get Y from arary
+            float radius = radii[i]; // Get radius from arary
+            Color color = colors[i]; // Get color from arary
+            // Draw with random values
+            Draw.FillColor = color;
+            Draw.Circle(x, y, radius);
         }
 
-        /// <summary>
-        ///     Update runs every frame.
-        /// </summary>
-        public void Update()
-        {
-            Window.ClearBackground(Color.OffWhite);
-
-            // run loop 10 times
-            for (int i = 0; i < 10; i++)
-            {
-                // Get value
-                float x = xs[i]; // Get X from array
-                float y = ys[i]; // Get Y from arary
-                float radius = radii[i]; // Get radius from arary
-                Color color = colors[i]; // Get color from arary
-                // Draw with random values
-                Draw.FillColor = color;
-                Draw.Circle(x, y, radius);
-            }
-
-        }
     }
 }

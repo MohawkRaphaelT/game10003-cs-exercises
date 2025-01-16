@@ -2,10 +2,12 @@
 // Only draw the colored squared when the mouse is inside that quadrant.
 // Thus, only 1 color is draw on screen at one time.
 
+// Include the namespaces (code libraries) you need below.
 using System;
 using System.Numerics;
 
-namespace Game10003;
+// The namespace your code is in.
+namespace MohawkGame2D;
 
 public class Game
 {
