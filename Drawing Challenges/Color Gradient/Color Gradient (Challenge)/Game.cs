@@ -33,7 +33,7 @@ namespace MohawkGame2D
         public void Update()
         {
             // Calculate red
-            float r = Input.GetMouseX() / Window.Width;
+            float r = 1.0f;
             // Leave g and b as 0. You could set this to anything you would like.
             float g = 0.0f;
             float b = 0.0f;
