@@ -32,13 +32,13 @@ namespace MohawkGame2D
         /// </summary>
         public void Update()
         {
-            // Calculate red
-            float r = 1.0f;
-            // Leave g and b as 0. You could set this to anything you would like.
-            float g = 0.0f;
+            // Calculate red and green.
+            float r = 1.0f; // 1 = 100% light (red channel)
+            float g = 0.0f; // 0 =   0% light (green channel)
+            // This challenge does not expect you to set the B color channel.
             float b = 0.0f;
 
-            // Combine the 3 color components
+            // Combine the 3 color components we defined above
             ColorF bgColor = new ColorF(r, g, b);
 
             // Clear the background with this color

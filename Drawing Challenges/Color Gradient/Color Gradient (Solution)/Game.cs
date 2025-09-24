@@ -36,12 +36,16 @@ namespace MohawkGame2D
             // If mouseX is   0, then   0/400 is 0.0f, no red
             // If mouseX is 400, the, 400/400 is 1.0f, full red
             float r = Input.GetMouseX() / Window.Width;
-            // We could do the same for green along the Y axis
-            //float g = Input.GetMouseY() / Window.Height;
-            float g = 0.0f;
+            
+            // Calculate red as a percentage of the screen
+            // If mouseY is   0, then   0/400 is 0.0f, no green
+            // If mouseY is 400, the, 400/400 is 1.0f, full green
+            float g = Input.GetMouseY() / Window.Height;
+            
+            // This challenge does not expect you to set the B color channel.
             float b = 0.0f;
 
-            // Combine the 3 color components
+            // Combine the 3 color components we defined above
             ColorF bgColor = new ColorF(r, g, b);
 
             // Clear the background with this color
