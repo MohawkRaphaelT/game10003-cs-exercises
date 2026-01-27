@@ -61,7 +61,7 @@ public class Game
             xCoordinates[i] = xCoordinates[i + 1];
             yCoordinates[i] = yCoordinates[i + 1];
         }
-        // Set last index to curren mouse position.
+        // Set last index to current mouse position.
         xCoordinates[circleCount - 1] = Input.GetMouseX();
         yCoordinates[circleCount - 1] = Input.GetMouseY();
 
