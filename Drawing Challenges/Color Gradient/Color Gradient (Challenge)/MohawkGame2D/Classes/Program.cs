@@ -1,5 +1,4 @@
-﻿using System.Numerics;
-/*////////////////////////////////////////////////////////////////////////
+﻿/*////////////////////////////////////////////////////////////////////////
  * Copyright (c)
  * Mohawk College, 135 Fennell Ave W, Hamilton, Ontario, Canada L9C 0E5
  * Game Design (374): GAME 10003 Game Development Foundations
@@ -7,6 +6,7 @@
 
 using MohawkGame2D;
 using Raylib_cs;
+using System.Numerics;
 
 /// <summary>
 ///     The main underlying program. DO NOT EDIT.
@@ -15,7 +15,7 @@ using Raylib_cs;
 public static class Program
 {
     // Framebuffer information
-    private const int MaxRenderSize = 4096;
+    private const int MaxRenderSize = 1400;//4096;
     private static readonly RenderTexture2D[] buffers = new RenderTexture2D[2];
     private const ConfigFlags WindowConfigFlags = ConfigFlags.AlwaysRunWindow | ConfigFlags.VSyncHint;
 
@@ -40,9 +40,12 @@ public static class Program
         Raylib.BeginTextureMode(buffers[0]);
         game.Setup();
         Raylib.EndTextureMode();
+        // Place window in centre of monitor, if able
+        Window.CentreWindow();
         // Copy frame contents to other buffer
         Raylib.BeginTextureMode(buffers[1]);
-        Raylib.DrawTexture(buffers[0].Texture, 0, 0, Raylib_cs.Color.White);
+        Rectangle setupRenderArea = new(0, -MaxRenderSize, Window.Width, -Window.Height);
+        Raylib.DrawTextureRec(buffers[0].Texture, setupRenderArea, Vector2.Zero, Raylib_cs.Color.White);
         Raylib.EndTextureMode();
 
         // Raylib & wrapper frame loop

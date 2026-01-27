@@ -106,6 +106,21 @@ public static class Window
     }
 
     /// <summary>
+    ///     Centre window within the current monitor.
+    /// </summary>
+    public static void CentreWindow()
+    {
+        // Position window in centre of screen
+        int monitorID = Raylib.GetCurrentMonitor();
+        int monitorWidth = Raylib.GetMonitorWidth(monitorID);
+        int monitorHeight = Raylib.GetMonitorHeight(monitorID);
+        Vector2 windowPosition = new Vector2(
+            Width > monitorWidth ? 0 : (monitorWidth - Width) / 2,
+            Height > monitorHeight ? 0 : (monitorHeight - Height) / 2);
+        Raylib.SetWindowPosition((int)windowPosition.X, (int)windowPosition.Y);
+    }
+
+    /// <summary>
     ///     Set the window size in pixels.
     /// </summary>
     /// <param name="width">Width of window in pixels.</param>
@@ -137,7 +152,7 @@ public static class Window
     {
         int monitorIndex = Raylib.GetCurrentMonitor();
         int hz = Raylib.GetMonitorRefreshRate(monitorIndex);
-        Raylib.SetTargetFPS(hz);
+        SetTargetFpsOrWarn(hz);
     }
 
     #endregion
@@ -159,14 +174,18 @@ public static class Window
 
     private static void SetTargetFpsOrWarn(int targetFPS)
     {
+        // Warn when trying to set impossible FPS
         if (targetFPS <= 0)
         {
             string msg = "FPS must be greater than 0!";
             Console.WriteLine(msg);
         }
-
-        Window.targetFPS = targetFPS;
-        Raylib.SetTargetFPS(targetFPS);
+        // Only update FPS if not current FPS
+        else if (targetFPS != TargetFPS)
+        {
+            Window.targetFPS = targetFPS;
+            Raylib.SetTargetFPS(targetFPS);
+        }
     }
 
     private static void SetWidth(int width)

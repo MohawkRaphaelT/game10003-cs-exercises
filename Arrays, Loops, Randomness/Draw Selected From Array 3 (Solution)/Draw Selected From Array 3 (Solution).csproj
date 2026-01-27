@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>.net9.0</TargetFramework>
+    <TargetFramework>.net10.0</TargetFramework>
     <RootNamespace>Draw_Selected_From_Array_3__Solution_</RootNamespace>
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
