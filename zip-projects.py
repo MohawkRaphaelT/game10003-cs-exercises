@@ -5,7 +5,7 @@ import sys
 # Get ending tag
 tag = sys.argv[1]
 # Find existing projects
-pattern = "./**/**(*l*)/"
+pattern = "./**/**(**)/"
 dir_matches = glob.glob(pattern, recursive=True)
 print(f"Found {len(dir_matches)} directory matches for \"{pattern}\".")
 # Iterate over each
