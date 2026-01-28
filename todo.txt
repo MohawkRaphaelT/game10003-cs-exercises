@@ -1,2 +1,0 @@
-Script detele obj and bin
-Script auto-zip projects with number version
