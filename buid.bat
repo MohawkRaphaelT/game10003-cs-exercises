@@ -1,1 +1,0 @@
-dotnet build "./Lady Bacon/Lady Bacon (Solution)/" --output "./build/Lady Bacon (Solution)"
