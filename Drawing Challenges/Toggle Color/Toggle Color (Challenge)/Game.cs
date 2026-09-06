@@ -19,10 +19,10 @@ public class Game
     public void Update()
     {
         // Reset screen
-        Window.ClearBackground(Color.OffWhite);
+        Window.ClearBackground(240);
 
         // Set fill color
-        Draw.FillColor = Color.Red;
+        Draw.SetFillColor(255, 0, 0);
 
         //Draw square using above color
         Draw.Square(100, 100, 200);

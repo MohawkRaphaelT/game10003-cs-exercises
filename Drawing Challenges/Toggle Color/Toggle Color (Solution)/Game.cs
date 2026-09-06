@@ -22,14 +22,14 @@ public class Game
     public void Update()
     {
         // Reset screen
-        Window.ClearBackground(Color.OffWhite);
+        Window.ClearBackground(240);
 
         // Check for inputs
-        bool hasPressedSpacebar = Input.IsKeyboardKeyPressed(KeyboardInput.Space);
-        bool hasPressedMouseLeft = Input.IsMouseButtonPressed(MouseInput.Left);
+        bool hasPressedSpacebar = Input.IsKeyboardKeyPressed(KeyboardKey.Space);
+        bool hasPressedMouseLeft = Input.IsMouseButtonPressed(MouseButton.Left);
 
         // Check for toggle (A OR B)
-        if (hasPressedSpacebar || hasPressedMouseLeft)
+        if (hasPressedSpacebar == true || hasPressedMouseLeft == true)
         {
             // Use the ! NOT operator to flip a boolean back and forth
             // !false == true, and !true == false.
@@ -50,11 +50,13 @@ public class Game
         // Set fill color
         if (isActive == true)
         {
-            Draw.FillColor = Color.Green;
+            // Green
+            Draw.SetFillColor(0, 255, 0);
         }
         else // isActive is false
         {
-            Draw.FillColor = Color.Red;
+            // Red
+            Draw.SetFillColor(255, 0, 0);
         }
 
         //Draw square using above color

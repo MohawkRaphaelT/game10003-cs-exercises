@@ -20,28 +20,28 @@ public class Game
     public void Update()
     {
         // Clear screen
-        Window.ClearBackground(Color.OffWhite);
+        Window.ClearBackground(240);
 
-        // Top-Left
-        Draw.FillColor = Color.Red;
+        // Top-Left, red
+        Draw.SetFillColor(255, 0, 0);
         Draw.Square(0, 0, 200);
 
-        // Top-Right
-        Draw.FillColor = Color.Green;
+        // Top-Right, green
+        Draw.SetFillColor(0, 255, 0);
         Draw.Square(200, 0, 200);
 
-        // Bottom-Left
-        Draw.FillColor = Color.Yellow;
+        // Bottom-Left, yellow
+        Draw.SetFillColor(255, 255, 0);
         Draw.Square(0, 200, 200);
 
-        // Bottom-Right
-        Draw.FillColor = Color.Blue;
+        // Bottom-Right, blue
+        Draw.SetFillColor(0, 0, 255);
         Draw.Square(200, 200, 200);
 
         // Draw lines to separate screen into quadrants
-        Draw.LineSize = 2;
+        Draw.SetLineSize(2);
         Draw.LineSharp(Window.Width / 2, 0, Window.Width / 2, Window.Height);
         Draw.LineSharp(0, Window.Height / 2, Window.Width, Window.Height / 2);
-        Draw.LineSize = 0;
+        Draw.SetLineSize(0);
     }
 }

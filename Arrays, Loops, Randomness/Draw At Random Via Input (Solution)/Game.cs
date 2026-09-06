@@ -37,8 +37,8 @@ public class Game
         Window.ClearBackground(Color.OffWhite);
 
         // Increment index
-        if (Input.IsKeyboardKeyPressed(KeyboardInput.Space) ||
-            Input.IsMouseButtonPressed(MouseInput.Left))
+        if (Input.IsKeyboardKeyPressed(KeyboardKey.Space) ||
+            Input.IsMouseButtonPressed(MouseButton.Left))
         {
             Draw.FillColor = Random.Color();
             radius = Random.Float(10, 200);

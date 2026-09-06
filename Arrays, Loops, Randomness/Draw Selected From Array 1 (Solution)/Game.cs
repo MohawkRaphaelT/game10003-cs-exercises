@@ -35,8 +35,8 @@ public class Game
         Draw.LineSize = 3;
 
         // Increment index
-        if (Input.IsKeyboardKeyPressed(KeyboardInput.Space) ||
-            Input.IsMouseButtonPressed(MouseInput.Left))
+        if (Input.IsKeyboardKeyPressed(KeyboardKey.Space) ||
+            Input.IsMouseButtonPressed(MouseButton.Left))
         {
             // Increment index
             drawIndex++;

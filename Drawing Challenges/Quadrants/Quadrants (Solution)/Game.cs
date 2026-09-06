@@ -27,38 +27,38 @@ public class Game
         float halfWindowW = Window.Width / 2;
         float halfWindowH = Window.Height / 2;
 
-        // Top-Left
+        // Top-Left, red
         if (mouseX < halfWindowW && mouseY < halfWindowH)
         {
-            Draw.FillColor = Color.Red;
+            Draw.SetFillColor(255, 0, 0);
             Draw.Square(0, 0, 200);
         }
 
-        // Top-Right
+        // Top-Right, green
         if (mouseX > halfWindowW && mouseY < halfWindowH)
         {
-            Draw.FillColor = Color.Green;
+            Draw.SetFillColor(0, 255, 0);
             Draw.Square(200, 0, 200);
         }
 
-        // Bottom-Left
+        // Bottom-Left, yellow
         if (mouseX < halfWindowW && mouseY > halfWindowH)
         {
-            Draw.FillColor = Color.Yellow;
+            Draw.SetFillColor(255, 255, 0);
             Draw.Square(0, 200, 200);
         }
 
-        // Bottom-Right
+        // Bottom-Right, blue
         if (mouseX > halfWindowW && mouseY > halfWindowH)
         {
-            Draw.FillColor = Color.Blue;
+            Draw.SetFillColor(0, 0, 255);
             Draw.Square(200, 200, 200);
         }
 
         // Draw lines to separate screen into quadrants
-        Draw.LineSize = 2;
+        Draw.SetLineSize(2);
         Draw.LineSharp(Window.Width / 2, 0, Window.Width / 2, Window.Height);
         Draw.LineSharp(0, Window.Height / 2, Window.Width, Window.Height / 2);
-        Draw.LineSize = 0;
+        Draw.SetLineSize(0);
     }
 }
