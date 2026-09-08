@@ -49,7 +49,7 @@ namespace MohawkGame2D
             Draw.SetLineSize(5);
             Draw.Line(0, 210, 400, 210);
             Draw.SetLineSize(4);
-            Draw.Triangle(200, 275, 380, 275, 290, 125);
+            Draw.Triangle(200, 125, 380, 125, 290, 275);
             Draw.Line(0, 225, 400, 225);
             Draw.SetLineSize(3);
             Draw.Line(0, 240, 400, 240);
