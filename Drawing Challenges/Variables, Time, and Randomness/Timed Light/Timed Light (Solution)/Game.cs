@@ -19,7 +19,7 @@ namespace MohawkGame2D
         /// </summary>
         public void Setup()
         {
-            Window.SetTitle("Toggle Light");
+            Window.SetTitle("Timed Light");
             Window.SetSize(400, 400);
             Draw.SetLineSize(6);
         }
