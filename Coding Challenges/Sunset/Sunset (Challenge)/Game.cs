@@ -1,6 +1,5 @@
 ﻿// Include the namespaces (code libraries) you need below.
 using System;
-using System.Diagnostics;
 using System.Numerics;
 
 // The namespace your code is in.
@@ -62,7 +61,7 @@ namespace MohawkGame2D
             Draw.FillColor = wine;
             Draw.Rectangle(0, 300, 400, 100);
 
-            // Sun mirror image on ocean
+            // Sun reflection on ocean
             Draw.LineSize = 1;
             Draw.FillColor = beige;
 
